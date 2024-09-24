@@ -43,6 +43,9 @@
 import { ref } from 'vue'
 // @ts-ignore
 import avatarImage from '../assets/images/avatar-logo.png'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 interface MenuItem {
   label: string
@@ -50,49 +53,24 @@ interface MenuItem {
   items?: MenuItem[]
   url?: string
   target?: string
+  command?: () => void
 }
 
 const items = ref<MenuItem[]>([
   {
-    label: 'Home',
-    icon: 'pi pi-home'
+    label: 'Sobre',
+    icon: 'pi pi-home',
+    command: () => router.push('/')
   },
   {
     label: 'Experiências',
-    icon: 'pi pi-star'
+    icon: 'pi pi-star',
+    command: () => router.push('/experiencias')
   },
   {
     label: 'Projetos',
     icon: 'pi pi-wallet',
-    items: [
-      {
-        label: 'Core',
-        icon: 'pi pi-bolt'
-      },
-      {
-        label: 'Blocks',
-        icon: 'pi pi-server'
-      },
-      {
-        label: 'UI Kit',
-        icon: 'pi pi-pencil'
-      },
-
-      {
-        label: 'Templates',
-        icon: 'pi pi-palette',
-        items: [
-          {
-            label: 'Apollo',
-            icon: 'pi pi-palette'
-          },
-          {
-            label: 'Ultima',
-            icon: 'pi pi-palette'
-          }
-        ]
-      }
-    ]
+    command: () => router.push('/projetos')
   },
   {
     label: 'Contato',
