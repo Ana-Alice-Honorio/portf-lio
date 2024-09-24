@@ -113,7 +113,7 @@ const items = ref<MenuItem[]>([
       {
         label: 'Medium',
         icon: 'pi pi-book',
-        url: 'https://alicedorh.medium.com/',
+        url: 'https://anaalicehonorio.medium.com/',
         target: '_blank'
       },
       {

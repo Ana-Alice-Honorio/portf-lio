@@ -1,9 +1,9 @@
 <script setup>
-import { RouterView } from 'vue-router'
 import HeaderConteiner from './components/HeaderConteiner.vue'
+import ProfileConteiner from './components/ProfileConteiner.vue'
 </script>
 
 <template>
   <HeaderConteiner />
-  <RouterView />
+  <ProfileConteiner />
 </template>

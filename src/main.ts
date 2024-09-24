@@ -2,7 +2,6 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
 
 //primevue
 import PrimeVue from 'primevue/config'
@@ -12,7 +11,7 @@ import Avatar from 'primevue/avatar'
 
 const app = createApp(App)
 
-app.use(router).use(PrimeVue, {
+app.use(PrimeVue, {
   theme: {
     preset: Aura
   }
