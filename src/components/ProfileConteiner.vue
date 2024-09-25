@@ -1,9 +1,24 @@
 <template>
-  <div class="bg-mustard container">oi</div>
+  <div class="page-container bg-mustard">
+    <div class="content">
+      <h1>Sobre</h1>
+      <p>Informações sobre mim...</p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.container {
+.page-container {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  box-sizing: border-box;
   width: 100%;
+}
+
+.content {
+  text-align: center;
 }
 </style>

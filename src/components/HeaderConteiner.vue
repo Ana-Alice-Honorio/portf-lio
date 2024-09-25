@@ -106,9 +106,6 @@ const items = ref<MenuItem[]>([
 
 <style scoped>
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: var(--p-bg-color);
