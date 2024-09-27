@@ -1,8 +1,8 @@
 <template>
   <div class="page-container bg-mustard">
     <div class="content">
-      <h1>Sobre</h1>
-      <p>Informações sobre mim...</p>
+      <img src="/public/profile.png" alt="" />
+      <div>oioiiiii</div>
     </div>
   </div>
 </template>
@@ -19,6 +19,12 @@
 }
 
 .content {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content img {
+  width: 35%;
 }
 </style>
